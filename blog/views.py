@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def blogHome(request):
-    return HttpResponse("Home blog")
+    return render(request, 'blog/bloghome.html')
 
 def blogPost(request, slug):
-    return HttpResponse(f'this is blogpost: {slug}')
+    return render(request, 'blog/blogpost.html')
