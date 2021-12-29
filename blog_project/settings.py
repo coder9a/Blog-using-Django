@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'blog.apps.BlogConfig'
+    'blog.apps.BlogConfig',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +131,6 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-STATICFILES_DIRS = {
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-}
+]
